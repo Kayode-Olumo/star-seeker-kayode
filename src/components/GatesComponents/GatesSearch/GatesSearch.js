@@ -11,6 +11,7 @@ import {
   GatesSearchGrid,
   GatesSearchWrapper,
 } from "./styles/GatesSearch.styles";
+import Loading from "../../Loading/Loading";
 
 const GatesSearch = () => {
   const [gates, setGates] = useState();
@@ -59,7 +60,7 @@ const GatesSearch = () => {
         </GatesSearchBar>
       </GatesSearchWrapper>
       <GatesSearchGrid>
-        {!filteredData && "Loading..."}
+        {!filteredData && <Loading />}
         {filteredData &&
           filteredData.map((gate) => {
             return (

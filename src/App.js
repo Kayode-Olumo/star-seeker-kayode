@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
 import Home from "./pages/Home/Home";
 import GateDetails from "./pages/GateDetails/GateDetails";
-import CheapTravel from "./pages/CheapTravel/CheapTravel";
+import CheapTravel from "./pages/CheapTravelComponents/CheapTravel/CheapTravel";
 import NavBar from "./components/NavBar/NavBar";
 import GatesSearch from "./components/GatesComponents/GatesSearch/GatesSearch";
 import Footer from "./components/Footer/Footer";
