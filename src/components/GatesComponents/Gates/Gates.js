@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { gateSectionData } from "../../../data/data";
-import { GatesWrapper, GatesContentWrapper } from "./styles/Gates.styles";
+import { GatesWrapper } from "./styles/Gates.styles";
 
 const Gates = () => {
   const navigate = useNavigate();

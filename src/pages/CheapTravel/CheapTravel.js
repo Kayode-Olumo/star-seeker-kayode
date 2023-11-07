@@ -34,6 +34,7 @@ const CheapTravel = () => {
     let fromCode;
 
     data &&
+      // eslint-disable-next-line array-callback-return
       data.filter((arr) => {
         if (arr.name === to) {
           toCode = arr.code;
@@ -93,9 +94,10 @@ const CheapTravel = () => {
         </FormControl>
         <Button
           text="Search"
-          clickFunc={() => (
-            handleGetCode(toValue, fromValue), setIsClicked(true)
-          )}
+          clickFunc={() => {
+            handleGetCode(toValue, fromValue);
+            setIsClicked(true);
+          }}
         ></Button>
       </CheapTravelModal>
       {cheapRoute?.length === 0 && loading && (
