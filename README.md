@@ -18,6 +18,13 @@ In the project directory, you can run:
 
 ## Future Improvements
 
+1. Tailwind CSS
+2. Redux for state management
+3. Develop a backend node server to handle api call
+4. NoSQL database solution e.g. mongoDB
+5. More UI iterations and feedback loops
+6. Better client side validation
+
 # How to run 
 
 ### `npm install`
@@ -30,23 +37,11 @@ API token has to be stored at the root level of the application in a .env file e
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost: 
+Open [http://localhost: 3000
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 
