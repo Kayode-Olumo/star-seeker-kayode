@@ -6,6 +6,10 @@ export const ModalWrapper = styled.div`
   justify-content: center;
   //   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px;
 
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    margin-top: 33rem;
+  }
+
   .main-content {
     height: 70%;
     width: 100%;

@@ -37,7 +37,7 @@ export const NavWrapper = styled.nav`
 
   ul {
     display: flex;
-    font-weight: 300;
+    font-weight: 500;
     gap: 3rem;
     list-style-type: none;
 

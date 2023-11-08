@@ -9,4 +9,8 @@ export const NoDataWrapper = styled.div`
   img {
     width: 15rem;
   }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    margin-top: 33rem;
+  }
 `;

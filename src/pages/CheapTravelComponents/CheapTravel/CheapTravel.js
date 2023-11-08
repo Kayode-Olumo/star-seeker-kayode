@@ -93,6 +93,7 @@ const CheapTravel = ({ handleFavouritesClick }) => {
           </Select>
         </FormControl>
         <Button
+          classes="search-btn"
           text="Search"
           clickFunc={() => {
             handleGetCode(toValue, fromValue);

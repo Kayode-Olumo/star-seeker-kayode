@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { NavLogo, NavWrapper } from "./styles/NavBar.styles";
 import { SiStarship } from "react-icons/si";
-import { AiFillCloseCircle } from "react-icons/ai";
 import Badge from "@mui/joy/Badge";
 
 const NavBar = ({ favoritesData }) => {

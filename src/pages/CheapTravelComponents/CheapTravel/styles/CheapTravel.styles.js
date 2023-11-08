@@ -77,6 +77,20 @@ export const CheapTravelModal = styled.div`
     cursor: pointer;
   }
 
+  .search-btn {
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
+
   @media screen and (min-width: 280px) and (max-width: 1080px) {
     margin: 0rem 2rem;
     flex-direction: column;
