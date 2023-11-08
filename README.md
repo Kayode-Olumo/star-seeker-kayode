@@ -113,6 +113,7 @@ By following these steps and considerations, you can build a front-end applicati
 4. NoSQL database solution e.g. mongoDB
 5. More UI iterations and feedback loops
 6. Better client side validation
+7. Pagination for data above a specific limit
 
 # How to run 
 
