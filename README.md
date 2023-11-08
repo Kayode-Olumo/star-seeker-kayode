@@ -4,14 +4,6 @@
 
 ## My Approach
 
-In the project directory, you can run:
-
-## Considerations during development
-
-In the project directory, you can run:
-
-## Assumptions
-
 1. Requirements Gathering:
 
 Understand the project requirements and objectives.
@@ -102,6 +94,13 @@ Consider future scalability needs and adapt your architecture accordingly.
 Encourage collaboration and knowledge sharing within your development team.
 Be active in the developer community to leverage best practices and stay updated on new technologies.
 By following these steps and considerations, you can build a front-end application that not only meets the project requirements but also delivers a great user experience and is maintainable for the long term. Adapt the process to your specific project needs, and always stay current with industry trends and user expectations.
+
+## Considerations during development
+
+In the project directory, you can run:
+
+## Assumptions
+
 
 ## Bonus Task
 
