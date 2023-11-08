@@ -20,6 +20,13 @@ In the project directory, you can run:
 
 # How to run 
 
+### `npm install`
+
+Install all necessary dev dependencies and package logs before\
+
+### `.env`
+API token has to be stored at the root level of the application in a .env file e.g. REACT_APP_API_KEY= *Your api token goes here*
+
 ### `npm start`
 
 Runs the app in the development mode.\
