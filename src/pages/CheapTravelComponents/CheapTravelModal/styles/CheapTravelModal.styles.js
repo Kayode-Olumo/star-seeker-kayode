@@ -14,6 +14,14 @@ export const ModalWrapper = styled.div`
     justify-content: space-between;
     padding: 10px 20px 0 20px;
   }
+
+  .fav-icon {
+    display: grid;
+  }
+
+  .fav-icon > button {
+    border-radius: 0 0 15px 15px;
+  }
 `;
 
 export const ModalContainer = styled.div`

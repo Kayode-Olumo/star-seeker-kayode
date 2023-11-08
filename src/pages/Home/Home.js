@@ -25,10 +25,6 @@ const Home = () => {
   });
   const [journeyResult, setJourneyResult] = useState();
 
-  //   const [favorites, setFavorites] = useState();
-  //   const [loading, setLoading] = useState();
-  //   const [error, setError] = useState();
-
   return (
     <div>
       <HomeWrapper>

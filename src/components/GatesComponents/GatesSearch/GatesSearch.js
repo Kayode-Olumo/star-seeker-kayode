@@ -14,10 +14,8 @@ import {
 import Loading from "../../Loading/Loading";
 
 const GatesSearch = () => {
-  const [gates, setGates] = useState();
+  const [gates, setGates] = useState([]);
   const [inputValue, setInputValue] = useState("");
-  console.log(gates, "hello");
-  console.log(inputValue, "typing...");
 
   const navigate = useNavigate();
 
@@ -30,7 +28,6 @@ const GatesSearch = () => {
   };
 
   const handleNavigation = (code) => {
-    console.log(code);
     navigate(`/starseeker/gates/gate-details/${code}`);
   };
 

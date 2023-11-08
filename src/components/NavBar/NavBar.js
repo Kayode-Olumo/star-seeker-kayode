@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { NavLogo, NavWrapper } from "./styles/NavBar.styles";
 import { SiStarship } from "react-icons/si";
+import Badge from "@mui/joy/Badge";
 
-const NavBar = () => {
+const NavBar = ({ favoritesData }) => {
   const navigate = useNavigate();
+
+  const [navData, setNavData] = useState();
+
+  useEffect(() => {
+    setNavData(favoritesData);
+  }, [favoritesData]);
   return (
     <NavWrapper>
       <div className="nav-brand" onClick={() => navigate("/")}>
@@ -19,7 +26,11 @@ const NavBar = () => {
           <li onClick={() => navigate("/starseeker/cheap-travel")}>
             Cheap Travel
           </li>
-          <li>Favourite</li>
+          <Badge badgeContent={navData?.length}>
+            <li onClick={() => navigate("/starseeker/favourites")}>
+              Favourite
+            </li>
+          </Badge>
         </ul>
       </div>
     </NavWrapper>

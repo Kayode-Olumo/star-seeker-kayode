@@ -6,13 +6,14 @@ import {
   ModalContent,
   ModalContainer,
 } from "./styles/CheapTravelModal.styles";
+import FavIcon from "../../../components/FavouritesComponents/FavIcon/FavIcon";
 
-const CheapTravelModal = ({ cheapRoute }) => {
+const CheapTravelModal = ({ cheapRoute, clickFunc }) => {
   return (
     <>
       <ModalWrapper>
         <ModalContainer>
-          <div className="main-content">
+          <div className="main-content main-container">
             <ModalContent>
               <p className="journey-ticket-text">Departure</p>
               <p className="journey-ticket-text journey-ticket-header">
@@ -44,6 +45,7 @@ const CheapTravelModal = ({ cheapRoute }) => {
               <p className="total-parking-refund">Refundable </p>
             </div>
           </div>
+          <FavIcon page="cheapTravel" clickFunc={clickFunc} />
         </ModalContainer>
       </ModalWrapper>
       <div>
