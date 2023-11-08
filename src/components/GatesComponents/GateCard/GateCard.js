@@ -9,6 +9,7 @@ const GateCard = ({ code, name, status, getId }) => {
       variant="outlined"
       sx={{ width: "auto", height: 100, cursor: "pointer" }}
       onClick={getId}
+      data_testid="my-button"
     >
       <CardContent>
         <Typography fontWeight="md" textColor="success.plainColor">

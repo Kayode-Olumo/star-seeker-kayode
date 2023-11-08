@@ -26,7 +26,6 @@ const GateDetails = () => {
   }, [code]);
 
   const handleViewDetails = (viewCode) => {
-    console.log(viewCode);
     navigate(`/starseeker/gates/gate-details/${viewCode}`);
   };
 

@@ -17,13 +17,14 @@ import Loading from "../../../components/Loading/Loading";
 import NoData from "../../../components/NoData/NoData";
 import CheapTravelModalComponent from "../CheapTravelModal/CheapTravelModal";
 
-const CheapTravel = () => {
+const CheapTravel = ({ handleFavouritesClick }) => {
   const [data, setData] = useState();
   const [cheapRoute, setCheapRoute] = useState();
   const [toValue, setToValue] = useState("");
   const [fromValue, setFromValue] = useState("");
   const [isClicked, setIsClicked] = useState(false);
   const [loading, setLoading] = useState(false);
+  console.log(cheapRoute);
 
   useEffect(() => {
     getGates(setData);
@@ -101,7 +102,10 @@ const CheapTravel = () => {
       </CheapTravelModal>
       {cheapRoute?.length === 0 && loading && <Loading />}
       {cheapRoute ? (
-        <CheapTravelModalComponent cheapRoute={cheapRoute} />
+        <CheapTravelModalComponent
+          cheapRoute={cheapRoute}
+          clickFunc={() => handleFavouritesClick(cheapRoute)}
+        />
       ) : (
         <NoData />
       )}
