@@ -2,9 +2,22 @@
 
 **Star Seeker** is a revolutionary app that calculates the cost of your interstellar journeys, finds efficient routes through a network of gates, and provides detailed gate information. We've added a "Journey Memory" feature, allowing you to save your favourite routes for future adventures. With a sleek and user-friendly interface, our app ensures a delightful experience, whether you're on the web or a mobile device. Join us in this mission to redefine the future of travel, one hyperspace jump at a time. The cosmos is calling, and the journey begins with Star Seeker. Start your cosmic adventure now!
 
-## Available Scripts
+## My Approach
 
 In the project directory, you can run:
+
+## Considerations during development
+
+In the project directory, you can run:
+
+## Assumptions
+
+In the project directory, you can run:
+
+## Bonus Task
+
+## Future Improvements
+
 
 ### `npm start`
 
