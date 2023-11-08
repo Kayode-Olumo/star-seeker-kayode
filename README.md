@@ -90,7 +90,7 @@ In the project directory, you can run:
 
 Silver Client uses React in conjunction with Webpack, Babel and React Hot Loader to help make local development as fast as possible.
 
-`git clone git@github.com:bbc/silver-client.git`
+`git clone git@github.com:Kayode-Olumo/star-seeker-kayode.git`
 
 `npm install` - Install all necessary dev dependencies and package logs before\
 
