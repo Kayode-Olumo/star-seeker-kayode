@@ -4,96 +4,65 @@
 
 ## My Approach
 
-1. Requirements Gathering:
+### Requirements Gathering
 
-Understand the project requirements and objectives.
-Identify the target audience and their needs.
+#### What are the core features to be supported?
 
-2. Technology Stack Selection:
+- Calculate the cost of a Journey
+- Display the cheapest transport recommendation
+- Display gate details and other relevant information
+- Let users find the cheapest routes between two gates
+- Allow the ability to save/favourite a route
 
-Choose the appropriate front-end technologies and frameworks based on the project requirements and your team's expertise.
+#### Identify the target audience and their needs.
+The assignment brief did not specify. Therefore it is assumed that the users of the application will be international users of a wide age range: US, Asia, Europe, etc.
 
-3. Project Setup:
+#### Non-functional requirements
+Page and data loading time should ideally be under 2 seconds with quick interactions with elements. Booking travels are usually a very time sensitive affair.
 
-Set up your development environment, including code editors, version control systems (e.g., Git), and package managers (e.g., npm or yarn).
+#### Devices the application will be used on
+It is expected that the user will engage with the applicaiton via a few mediums: laptop, tablets, mobile, etc.
 
-4. User Interface Design:
+#### Authentication
+Signing in was not within the scope of this assessment. However, future iterations may benefit from it when it come to storing user data
 
-Create wireframes and mockups to visualize the user interface and user experience (UI/UX).
-Ensure a responsive design to cater to various devices and screen sizes.
+## Architecture / high-level design
+[Star Seeker Architecture.pdf](https://github.com/Kayode-Olumo/star-seeker-kayode/files/13300785/Star.Seeker.Architecture.pdf)
 
-5.Project Structure:
+### Component responsibilities
+- Server: Provides HTTP APIs to fetch gates data, Journey data, modify the favourites.
+- Controller: Controls the flow of data within the application and makes network requests to the server (React hooks).
+- Client Store: Stores data needed across the whole application. 
 
-Organize your project structure with a clear separation of components, styles, and assets.
-Use a modular approach for scalability and maintainability.
+- Pages:
+    - Gates: Displays a list of gates that can be clicked for more info.
+    - Product Details: Displays the details of a single gate along with additional details.
+    - Favourites: Displays favourite routes and allows users to remove added routes.
+    - Home: Has feature to calculate Journey cost and suggest a recommended mode of transport based on a few parameters.
 
-6. Coding and Implementation:
 
-Write clean and maintainable code following coding standards and best practices.
-Use a component-based architecture for building UI elements.
-Implement accessibility features for users with disabilities.
+### Technology Stack Selection:
+#### Front-end
+- React 18
+- React router dom
+- Styled components
 
-7. API Integration:
+#### UI Component Library
+- Material UI
+- React Icons
 
-Interact with back-end APIs to retrieve and update data.
-Implement error handling and data validation.
+#### API Data Fetching
+- Axios
 
-8. State Management (for complex apps):
 
-Use state management libraries like Redux or Mobx to manage app-wide state.
-Choose a state management solution that suits the project's complexity.
+### User Interface Design:
 
-9. Routing and Navigation:
+Please see attached pdf for wireframes and information architecture to visualize the user interface and user experience (UI/UX).
+This was the first iteration, just an exercise to walk through my ideas
 
-Implement a navigation system to enable users to move between different parts of the application.
+[StarSeeker UI.pdf](https://github.com/Kayode-Olumo/star-seeker-kayode/files/13300584/StarSeeker.UI.pdf)
 
-10. Testing:
-
-Write unit tests for components and functions to ensure the application's reliability.
-Perform user testing and usability testing to gather feedback and make improvements.
-
-11. Styling and Theming:
-
-Apply consistent styles and maintain a cohesive design throughout the application.
-Use CSS preprocessors (e.g., SCSS) or CSS-in-JS solutions for structured styling.
-12. Performance Optimization:
-
-Optimize the application for speed and performance by reducing unnecessary rendering and minimizing resource requests.
-13. Security:
-
-Implement security best practices, such as input validation and protection against cross-site scripting (XSS) and other vulnerabilities.
-14. Internationalization and Localization:
-
-Support multiple languages and regions if your application has a global audience.
-
-15. Cross-Browser and Cross-Platform Compatibility:
-
-Test the application on various web browsers and devices to ensure it works consistently.
-16. Documentation:
-
-Create thorough documentation for the application, including how to install, run, and use it.
-17. Version Control:
-
-Use a version control system like Git to track changes, collaborate with team members, and maintain a history of code revisions.
-18. Deployment:
-
-Deploy the application to a web server or relevant platforms (e.g., app stores for mobile apps).
-19. Monitoring and Analytics:
-
-Implement tools for monitoring application performance and tracking user behavior to gain insights for improvements.
-20. User Feedback and Iteration:
-
-Collect user feedback and continuously iterate on the application to address issues and enhance features.
-21. Maintainability and Scalability:
-
-Plan for long-term maintenance by following coding and architectural best practices.
-Consider future scalability needs and adapt your architecture accordingly.
-
-22. Community and Collaboration:
-
-Encourage collaboration and knowledge sharing within your development team.
-Be active in the developer community to leverage best practices and stay updated on new technologies.
-By following these steps and considerations, you can build a front-end application that not only meets the project requirements but also delivers a great user experience and is maintainable for the long term. Adapt the process to your specific project needs, and always stay current with industry trends and user expectations.
+[Star Seeker - Information Architecture.pdf](https://github.com/Kayode-Olumo/star-seeker-kayode/files/13300587/Star.Seeker.-.Information.Architecture.pdf)
 
 ## Considerations during development
 
@@ -113,6 +82,7 @@ In the project directory, you can run:
 5. More UI iterations and feedback loops
 6. Better client side validation
 7. Pagination for data above a specific limit
+8. More robust unit tests
 
 # How to run 
 
