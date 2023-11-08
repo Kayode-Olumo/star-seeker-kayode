@@ -4,14 +4,6 @@
 
 ## My Approach
 
-In the project directory, you can run:
-
-## Considerations during development
-
-In the project directory, you can run:
-
-## Assumptions
-
 1. Requirements Gathering:
 
 Understand the project requirements and objectives.
@@ -103,6 +95,13 @@ Encourage collaboration and knowledge sharing within your development team.
 Be active in the developer community to leverage best practices and stay updated on new technologies.
 By following these steps and considerations, you can build a front-end application that not only meets the project requirements but also delivers a great user experience and is maintainable for the long term. Adapt the process to your specific project needs, and always stay current with industry trends and user expectations.
 
+## Considerations during development
+
+In the project directory, you can run:
+
+## Assumptions
+
+
 ## Bonus Task
 
 ## Future Improvements
@@ -113,22 +112,27 @@ By following these steps and considerations, you can build a front-end applicati
 4. NoSQL database solution e.g. mongoDB
 5. More UI iterations and feedback loops
 6. Better client side validation
+7. Pagination for data above a specific limit
 
 # How to run 
 
-### `npm install`
+## Installation
 
-Install all necessary dev dependencies and package logs before\
+Silver Client uses React in conjunction with Webpack, Babel and React Hot Loader to help make local development as fast as possible.
+
+`git clone git@github.com:bbc/silver-client.git`
+
+`npm install` - Install all necessary dev dependencies and package logs before\
+
+`npm start`
+
+In the browser:
+http://localhost:3000/
 
 ### `.env`
 API token has to be stored at the root level of the application in a .env file e.g. REACT_APP_API_KEY= *Your api token goes here*
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost: 3000
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 
 
