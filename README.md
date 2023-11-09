@@ -67,7 +67,7 @@ This was the first iteration, just an exercise to walk through my ideas
 
 ## Bonus Task
 ### State management - Save favourite routes
-- For the purpose of this exercise I used localstorage to save route data
+- For the purpose of this exercise I used localstorage to save route data, this would not be an appropriate approach in production
 - Add and remove functionality for saved routes are handled at the root level of the application
 - Because I the size and complexity of the project this solution serves the intended purpose. However, future versions could make use of modX, Redux or useContext hook.  
 - If given the opportunity to continue with a second iteration I would consider configuring a NoSQL DB for persistent data
