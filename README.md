@@ -64,25 +64,35 @@ This was the first iteration, just an exercise to walk through my ideas
 
 [Star Seeker - Information Architecture.pdf](https://github.com/Kayode-Olumo/star-seeker-kayode/files/13300587/Star.Seeker.-.Information.Architecture.pdf)
 
-## Considerations during development
-
-In the project directory, you can run:
-
-## Assumptions
-
 
 ## Bonus Task
+### State management - Save favourite routes
+- For the purpose of this exercise I used localstorage to save route data
+- Add and remove functionality for saved routes are handled at the root level of the application
+- Because I the size and complexity of the project this solution serves the intended purpose. However, future versions could make use of modX, Redux or useContext hook.  
+- If given the opportunity to continue with a second iteration I would consider configuring a NoSQL DB for persistent data
+
+### Testing
+- I was not able to complete this task in the time given.
+- Nonetheless, if I were to attack this I would have used the react testing library to test key functionality using a TDD approach.
+#### Things to test
+- API fetching
+- Handling side effects and async functions
+- mocking data to see if functions return expected values
+- Test on screen changes e.g. like the modal toggle
+
 
 ## Future Improvements
 
 1. Tailwind CSS
-2. Redux for state management
-3. Develop a backend node server to handle api call
-4. NoSQL database solution e.g. mongoDB
-5. More UI iterations and feedback loops
-6. Better client side validation
-7. Pagination for data above a specific limit
-8. More robust unit tests
+2. Next.js
+3. Redux or Context hooks for state management
+4. Develop a backend node server to handle api call
+5. NoSQL database solution e.g. mongoDB
+6. More UI iterations and feedback loops
+7. Better client side validation
+8. Pagination for data above a specific limit
+9. More robust unit tests
 
 # How to run 
 
